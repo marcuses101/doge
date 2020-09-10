@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Good Dogs</h1>
+    <form action="">
+        <label for="numberOfDogs">Number of Dogs:</label><br>
+        <span id="dogNumberDisplay">3</span><br>
+        <input type="range" name="numberOfDogs" id="numberOfDogs" value="3" min="0" max="50" step="1">
+        <input type="submit" value="Get good dogs!" > 
+    </form>
+    <img class="hide" id="loading" src="https://i.pinimg.com/originals/cd/18/00/cd1800edc2c6c1ae930e7fa7fee1dca2.gif" alt="">
+    <p class="error hide">Oh no! There seems to be and error.</p>
+    <img src="https://thumbs.gfycat.com/DarkGlitteringHen-size_restricted.gif" alt="sad doge" class="error hide">
+    <div id="doggy-pics"></div>
+<script src="script.js"></script>
+</body>
+</html>
