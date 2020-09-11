@@ -10,9 +10,23 @@
 button:focus{
     outline:none;
 }
+p {
+    text-align: center;
+}
+
+#errorPup {
+    all: unset;
+    width: 25%;
+    margin: 10px auto;
+    display: block;
+}
+.hide#errorPup {
+    display: none;
+}
 
 .active{
-    transform: rotate(-4deg) scale(1.1)
+    transform: rotate(-4deg) scale(1.1);
+    font-weight: 800;
 }
 
 h1 {

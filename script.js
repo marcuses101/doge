@@ -55,6 +55,7 @@ async function getDogByBreed(breed){
     try{
         hideError();
         loadGif.classList.remove("hide")
+        doggyList.innerHTML = "";
         let response = await fetch(`https://dog.ceo/api/breed/${breed}/images/random`)
         console.log(response);
         if (!response.ok) throw new Error(response.status);
