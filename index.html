@@ -1,58 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="dogs, cute, friend">
+    <meta name="author" content="Marcus Connolly">
+    <meta name="description" content="Lookup dog pictures by breed. Or get a random selection of good dogs!">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
         type="text/css">
     <link rel="stylesheet" href="style.css">
     <title>Get Good Dogs</title>
 </head>
+
 <body>
     <h1>Good Dogs!</h1>
     <nav>
+        <!--Combination of divs styled to look like a dog bone. -->
         <div class="bone active" data-show="#randomDogs">
             <div class="c1"></div>
             <div class="c2"></div>
             <div class="c3"></div>
             <div class="c4"></div>
             <div class="b1">
-              <div class="b2">
-                Random
-              </div>
+                <div class="b2">
+                    Random
+                </div>
             </div>
         </div>
+
         <div class="bone" data-show="#dogsByBreed">
             <div class="c1"></div>
             <div class="c2"></div>
             <div class="c3"></div>
             <div class="c4"></div>
             <div class="b1">
-              <div class="b2">
-                Breeds
-              </div>
+                <div class="b2">
+                    Breeds
+                </div>
             </div>
-        </div> 
+        </div>
     </nav>
+    <!-- Form for fetching n random dogs -->
     <form id="randomDogs">
         <h2>Random Dog!</h2>
-        <label for="numberOfDogs">Number of Dogs:</label><br>
-        <span id="dogNumberDisplay">3</span><br>
-        <input type="range" name="numberOfDogs" id="numberOfDogs" value="3" min="0" max="50" step="1">
-        <input type="submit" value="Get good dogs!" > 
+        <label for="numberOfDogs">Number of Dogs:
+            <p id="dogNumberDisplay">3</p>
+        </label>
+        <input type="range" name="numberOfDogs" id="numberOfDogs" value="3" min="1" max="50" step="1">
+        <input type="submit" value="Get good dogs!">
     </form>
+    <!-- Form for fetching one dog of particular breed-->
     <form id="dogsByBreed" class="hide">
         <h2>Dog by Breed!</h2>
         <label for="breedInput">Breed:</label><br>
         <input type="text" id="breedInput" required>
         <input type="submit" value="Get this breed!">
     </form>
-    <img class="hide" id="loading" src="https://i.pinimg.com/originals/cd/18/00/cd1800edc2c6c1ae930e7fa7fee1dca2.gif" alt="16-bit dog running gif">
+
+    <img class="hide" id="loading" src="https://i.pinimg.com/originals/cd/18/00/cd1800edc2c6c1ae930e7fa7fee1dca2.gif"
+        alt="16-bit dog running gif">
     <p class="error hide">Oh no! There seems to be and error.</p>
-    <img src="https://thumbs.gfycat.com/DarkGlitteringHen-size_restricted.gif" alt="sad doge" class="error hide" id="errorPup">
+    <img src="https://thumbs.gfycat.com/DarkGlitteringHen-size_restricted.gif" alt="sad doge" class="error hide"
+        id="errorPup">
     <div id="doggy-pics">
         <ul id="doggy-list"></ul>
     </div>
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>

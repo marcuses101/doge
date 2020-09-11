@@ -2,10 +2,6 @@
     display: none;
 }
 
-#doggy-pics{
-    width: 80%;
-    margin: 10px auto;
-}
 
 
 p {
@@ -51,13 +47,20 @@ ul{
     flex-wrap: wrap;
     list-style: none;
     padding: 0;
+    width: 90%;
+    margin: 10px auto;
+}
+ul > img {
+    display: block;
+    margin: auto;
+    max-height: 60vh
 }
 
 li {
     height: 40vh;
     flex-grow: 1;
 }
-img {
+li img {
     max-height: 100%;
     min-width: 100%;
     object-fit: cover;
@@ -70,13 +73,14 @@ li:last-child{
 #loading {
     width: 25%;
     margin: 10px auto;
-    min-width: 0;
+    min-width: 0; /* reset */
     display: block;
 }
 
 .hide#loading{
     display: none;
 }
+
 /* Dog bone buttons */
 
 .bone{
@@ -137,7 +141,8 @@ li:last-child{
 }
 
 .bone:hover{
-    transform: scale(1.05) rotate(3deg)
+    transform: scale(1.05) rotate(3deg);
+    cursor: pointer;
 }
 .bone.active{
     transform: rotate(-4deg) scale(1.15);
