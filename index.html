@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        type="text/css">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Get Good Dogs</title>
 </head>
 <body>
     <h1>Good Dogs!</h1>
     <nav>
-        <button class="bone active" data-show="#randomDogs">
+        <div class="bone active" data-show="#randomDogs">
             <div class="c1"></div>
             <div class="c2"></div>
             <div class="c3"></div>
@@ -19,8 +21,8 @@
                 Random
               </div>
             </div>
-        </button>
-        <button class="bone" data-show="#dogsByBreed">
+        </div>
+        <div class="bone" data-show="#dogsByBreed">
             <div class="c1"></div>
             <div class="c2"></div>
             <div class="c3"></div>
@@ -30,7 +32,7 @@
                 Breeds
               </div>
             </div>
-        </button> 
+        </div> 
     </nav>
     <form id="randomDogs">
         <h2>Random Dog!</h2>
